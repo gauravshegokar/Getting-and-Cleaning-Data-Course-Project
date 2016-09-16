@@ -61,4 +61,4 @@ avgData <- summarise_each(tempData,funs(mean))
 finalData <- gather(avgData, variable,averagevalues, timebodyaccelerometermeanx:frequencybodygyroscopejerkmagnitudestd)
 
 ## creating csv file
-write.table(finalData, file = "tidyDataSet.csv",row.names=FALSE, na="", sep=",")
+write.table(finalData, file = "tidyDataSet.txt",row.names=FALSE, na="", sep=",")
